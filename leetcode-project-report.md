@@ -25,11 +25,12 @@ Problem Name: *Tribonacci*
 
 ### Problem Information
 
-Problem Name: *fill me in*
+Problem Name: *Combination Sum*
 
-[Submission Link]()
+[Submission Link](https://leetcode.com/problems/combination-sum/submissions/2193576214/)
 
 *Insert your screenshot here, named `problem-2.png`.*
+![p2](problem-2.png)
 
 ### Time Complexity
 
