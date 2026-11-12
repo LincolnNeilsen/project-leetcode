@@ -50,7 +50,7 @@ Problem Name: *Flower Planting*
 
 [Submission Link](https://leetcode.com/problems/flower-planting-with-no-adjacent/submissions/2194243294/)
 
-![p2](problem-3.png)
+![p3](problem-3.png)
 
 ### Time Complexity
 
@@ -70,7 +70,7 @@ Problem Name: *Triangle*
 
 [Submission Link](https://leetcode.com/problems/triangle/submissions/2194254374/)
 
-![p2](problem-4.png)
+![p4](problem-4.png)
 
 ### Time Complexity
 
@@ -86,11 +86,11 @@ Problem Name: *Triangle*
 
 ### Problem Information
 
-Problem Name: *fill me in*
+Problem Name: *Number of provinces*
 
-[Submission Link]()
+[Submission Link](https://leetcode.com/problems/number-of-provinces/)
 
-*Insert your screenshot here, named `problem-5.png`.*
+![p5](problem-5.png)
 
 ### Time Complexity
 
@@ -106,11 +106,11 @@ Problem Name: *fill me in*
 
 ### Problem Information
 
-Problem Name: *fill me in*
+Problem Name: *Course Schedule*
 
-[Submission Link]()
+[Submission Link](https://leetcode.com/problems/course-schedule/submissions/2194271699/)
 
-*Insert your screenshot here, named `problem-6.png`.*
+[p6](problem-6.png)
 
 ### Time Complexity
 
