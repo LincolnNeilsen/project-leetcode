@@ -350,7 +350,7 @@ class Solution:
 
         def search(i):
             visited.add(i)                                          # O(N) Eventually all are visited
-            inProgress.add(i)                                       # O(E) All nodes are added, but then removed.
+            inProgress.add(i)                                       # O(E) All nodes are added then removed.
             for j in connectedCourses[i]:                   
                 if j in inProgress:
                     return False
