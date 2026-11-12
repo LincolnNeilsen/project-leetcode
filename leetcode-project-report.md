@@ -66,11 +66,11 @@ Problem Name: *Flower Planting*
 
 ### Problem Information
 
-Problem Name: *fill me in*
+Problem Name: *Triangle*
 
-[Submission Link]()
+[Submission Link](https://leetcode.com/problems/triangle/submissions/2194254374/)
 
-*Insert your screenshot here, named `problem-4.png`.*
+![p2](problem-4.png)
 
 ### Time Complexity
 
