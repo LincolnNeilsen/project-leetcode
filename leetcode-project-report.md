@@ -46,11 +46,11 @@ Problem Name: *Combination Sum*
 
 ### Problem Information
 
-Problem Name: *fill me in*
+Problem Name: *Flower Planting*
 
-[Submission Link]()
+[Submission Link](https://leetcode.com/problems/flower-planting-with-no-adjacent/submissions/2194243294/)
 
-*Insert your screenshot here, named `problem-3.png`.*
+![p2](problem-3.png)
 
 ### Time Complexity
 
