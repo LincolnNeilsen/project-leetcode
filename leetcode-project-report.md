@@ -114,11 +114,71 @@ Problem Name: *Course Schedule*
 
 ### Time Complexity
 
-*Fill me in*
+```py
+from collections import defaultdict
 
+
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
+        connectedCourses = defaultdict(list)                            # O(1) initialization is constant
+        for a, b in prerequisites:                                      # O(N) each prereq is added to dictionary
+            connectedCourses[b].append(a)                               # O(1) Appending is constant
+        visited = set()                                                 # O(1) initialization is constant
+        inProgress = set()                                              # O(1) initialization is constant
+
+        def search(i):                                                  # O(N*E) each node and all its edges are visited
+            visited.add(i)                                              # O(1) adding is constant
+            inProgress.add(i)                                           # O(1) initialization is constant
+            for j in connectedCourses[i]:                               # O(E) Each edge of node is considered
+                if j in inProgress:                                     # O(1) Comparison is constant
+                    return False                                        # O(1) Return is constant
+                if j not in visited:                                    # O(1) Comparison is constant
+                    if not search(j):                                   # O(1) Comparison is constant
+                        return False                                    # O(1) Return is constant
+            inProgress.remove(i)                                        # O(1) Removal is constant
+            return True                                                 # O(1) initialization is constant
+
+        for i in range(numCourses):                                     # O(N) Each course is hit
+            if i not in visited:                                        # O(1) Set check is constant
+                if not search(i):                                       # O(1) Comparison is constant
+                    return False                                        # O(1) Return is constant
+        return True                                                     # O(1) initialization is constant
+
+```
+Time complexity is **O(N*E)** due to the DFS search algorithm.
 ### Space Complexity
+```py
+from collections import defaultdict
 
-*Fill me in*
+
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
+        connectedCourses = defaultdict(list)                        # O(1) initialization is constant
+        for a, b in prerequisites:                                  # O(N) Each node is added
+            connectedCourses[b].append(a)                           # O(1) Each append is constant
+        visited = set()                                             # O(1) initialization is constant
+        inProgress = set()                                          # O(1) initialization is constant
+
+        def search(i):
+            visited.add(i)                                          # O(N) Eventually all are visited
+            inProgress.add(i)                                       # O(E) All nodes are added, but then removed.
+            for j in connectedCourses[i]:                   
+                if j in inProgress:
+                    return False
+                if j not in visited:
+                    if not search(j):
+                        return False
+            inProgress.remove(i)                                    # O(1) Removal is constant
+            return True
+
+        for i in range(numCourses):
+            if i not in visited:
+                if not search(i):
+                    return False
+        return True
+
+```
+Time complexity is **O(2N * E)** due to storing courses and their prereqs.
 
 ----
 
