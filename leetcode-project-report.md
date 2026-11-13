@@ -149,7 +149,7 @@ class Solution:
                     break
         return flowers[1:]                          # O(1) Return is constant.
 ```
-This solution requires **O(N*E)** time. Each node checks each of its neighbors E to assign flower colors.
+This solution requires **O(N)** time. Each node checks each of its neighbors E to assign flower colors. E maxes out at 4, so for this problem E is max 4, and a constant so could be ignored. 
 
 ### Space Complexity
 
@@ -264,7 +264,7 @@ class Solution:
 
         return counted                                              # O(1) Return is constant.
 ```
-Run time for this solution is **O(N*E)**, where N is the number of nodes and E is the number of edges. DFS implementation.
+Run time for this solution is **O(N + E)**, where N is the number of nodes and E is the number of edges. DFS implementation.
 
 ### Space Complexity
 
@@ -451,4 +451,4 @@ Problem Name: *fill me in*
 
 ## Project Review
 
-*Fill me in*
+Met with Benjamin and Conner. There was lots of overlap in the problems we did, but conner did the perfect squares problem in 4 lines of code which is just awesome. Benjamin also did the two sum problem, which I had done previously. It was a good review.  As for tribbonacci me and Benjamin had a different space complexity because he saves every element, whereas I save the last 3. The solutions that use DFS were very similar to eachother, and flower gardens were also similar to eachother. 
